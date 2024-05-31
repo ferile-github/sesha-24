@@ -1,0 +1,33 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Columns",
+		"description": "Columns",
+		"name": "acf/columns",
+		"category": "sesha",
+		"editorStyle": "file:./block-columns.css",
+		"icon": {
+			"foreground": "#000",
+			"src": "columns"
+		},
+		"keywords": [
+			"sesha",
+			"columns"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-columns.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": false,
+			"multiple": true,
+			"jsx" : true,
+			"mode": true
+		}
+}

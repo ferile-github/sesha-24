@@ -1,0 +1,10 @@
+{% block header %}
+<a class="skip-link screen-reader-text" href="#site-content">{{ _e( 'Skip to content') }}</a>
+<header id="site-masthead" class="site-masthead"  role="banner">
+		<div class="site-masthead__inner / container flex justify-between items-center">
+			{% include "masthead/logo.twig" %}
+			{% include "masthead/hamburger.twig" %}
+			{% include "masthead/menu.twig" with {'items': mainnav.get_items} %}
+		</div>
+</header>
+{% endblock %}

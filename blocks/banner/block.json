@@ -1,0 +1,48 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Banner",
+		"description": "Banner at the top of the page",
+		"name": "acf/banner",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "cover-image"
+		},
+		"keywords": [
+			"sesha",
+			"banner"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-banner.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": false,
+			"color": {
+					"text": false,
+					"background": false,
+					"link": false,
+					"gradients": false
+			},
+			"html": false,
+			"multiple": false,
+			"jsx" : false,
+			"spacing": {
+					"margin": false,
+					"padding": false,
+					"blockGap": false
+			},
+			"typography": {
+					"lineHeight": false,
+					"fontSize": false
+			},
+				"fullHeight": false
+		}
+}

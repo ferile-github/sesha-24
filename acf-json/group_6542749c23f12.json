@@ -1,0 +1,110 @@
+{
+    "key": "group_6542749c23f12",
+    "title": "Block - Video Banner",
+    "fields": [
+        {
+            "key": "field_6542749c2619a",
+            "label": "Banner Title",
+            "name": "banner_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This field is required. This block is used as a page banner, so we need a hidden H1 page title for SEO purposes on the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Page title",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6542749c261b2",
+            "label": "Banner Holding Image for Mobile",
+            "name": "banner_image_mobile",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Video will not play on mobile devices, so we need a holding image to display.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "mobile"
+        },
+        {
+            "key": "field_654274cd03f68",
+            "label": "Video",
+            "name": "video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": 10,
+            "mime_types": ""
+        },
+        {
+            "key": "field_6581bf62b08d9",
+            "label": "Scroll to content",
+            "name": "video_scroll",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Scroll to content at end of video?",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/video-banner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704189374
+}

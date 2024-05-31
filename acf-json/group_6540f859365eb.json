@@ -1,0 +1,71 @@
+{
+    "key": "group_6540f859365eb",
+    "title": "Block - Animations",
+    "fields": [
+        {
+            "key": "field_6540f85924ecd",
+            "label": "Animation",
+            "name": "animation",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no-animation": "None",
+                "fadeIn": "Fade in",
+                "fadeInUp": "Fade in Up",
+                "fadeInDown": "Fade in Down",
+                "fadeInRight": "Fade in Right",
+                "fadeInLeft": "Fade in Left",
+                "slideInLeft": "Slide in Left",
+                "slideInRight": "Slide in Right"
+            },
+            "default_value": "no-animation",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonial"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/services"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/animate"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704189373
+}

@@ -1,0 +1,64 @@
+{% if posts.pagination.pages is not empty %}
+	<nav class="pagination-block my-xl">
+		<ul class="pagination flex justify-center items-center gap-xs">
+
+			{# First #}
+			{% if posts.pagination.pages|first and posts.pagination.pages|first.current != true %}
+				<li class="first">
+					<a class="btn btn-sm" href="{{ posts.pagination.pages|first.link }}">⇤</a>
+				</li>
+			{% else %}
+				<li class="first disabled">
+					<button disabled>⇤</button>
+				</li>
+			{% endif %}
+
+			{# Previous #}
+			{% if posts.pagination.prev %}
+				<li class="prev">
+					<a class="btn btn-sm" href="{{ posts.pagination.prev.link }}">Previous</a>
+				</li>
+			{% else %}
+				<li class="prev disabled">
+					<button disabled>Previous</button>
+				</li>
+			{% endif %}
+
+			{# Pages #}
+			{% for page in posts.pagination.pages %}
+				{% if page.link %}
+					<li>
+						<a class="btn btn-sm" href="{{ page.link }}" class="{{ page.class }}">{{ page.title }}</a>
+					</li>
+				{% else %}
+					<li class="current">
+						<span class="{{ page.class }}">{{ page.title }}</span>
+					</li>
+				{% endif %}
+			{% endfor %}
+
+			{# Next #}
+			{% if posts.pagination.next %}
+				<li class="next">
+					<a class="btn btn-sm" href="{{ posts.pagination.next.link }}">Next</a>
+				</li>
+			{% else %}
+				<li class="next disabled">
+					<button disabled>Next</button>
+				</li>
+			{% endif %}
+
+			{# Last #}
+			{% if posts.pagination.pages|last and posts.pagination.pages|last.current != true %}
+				<li class="last">
+					<a class="btn btn-sm" href="{{ posts.pagination.pages|last.link }}">⇥</a>
+				</li>
+			{% else %}
+				<li class="last disabled">
+					<button disabled>⇥</button>
+				</li>
+			{% endif %}
+
+		</ul>
+	</nav>
+{% endif %}

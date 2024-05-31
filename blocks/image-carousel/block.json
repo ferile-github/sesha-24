@@ -1,0 +1,31 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Image Carousel",
+		"description": "A scrolling carousel of images",
+		"name": "acf/image-carousel",
+		"category": "sesha",
+		"viewScript": [ "file:./block-image-carousel.js", "block-image-carousel-script" ],
+		"icon": {
+			"foreground": "#000",
+			"src": "images-alt2"
+		},
+		"keywords": [
+			"sesha",
+			"images",
+			"carousel"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-image-carousel.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true
+		}
+}

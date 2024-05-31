@@ -1,0 +1,16 @@
+<section class="mb-lg col-span-1 md:col-span-2">
+	<h2 class="footer__title / text-h6  mb-md">
+		{{ __('Socials', 'sesha') }}
+	</h2>
+	{% if options.social_media %}
+	<ul class="flex flex-col gap-xs">
+	{% for item in options.social_media %}
+		<li class="list-none">
+			<a href="{{item.link.url}}" target="{{item.link.target}}">
+				{{item.link.title}}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+	{% endif %}
+</section>

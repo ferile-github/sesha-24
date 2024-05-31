@@ -1,0 +1,14 @@
+<article class="tease stack gap-xs flex flex-col tease-{{post.post_type}}" id="post-{{post.ID}}">
+	{% block content %}
+		<h2 class="h4"><a href="{{post.link}}">{{post.title}}</a></h2>
+		<p>{{post.preview}}</p>
+		{% if post.get_thumbnail %}
+			<a href="{{post.link}}">
+				{% include "components/responsive-thumbnail.twig" with {
+				'image': post.thumbnail,
+				'class': 'mb-sm'
+				} %}
+			</a>
+		{% endif %}
+	{% endblock %}
+</article>

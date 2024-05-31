@@ -1,0 +1,21 @@
+.wp-admin {
+
+	.block__horizontal-rule,
+	.block__spacer,
+	.acf-innerblocks-container:empty {
+		background-color: lightgoldenrodyellow;
+		&:hover {
+			cursor: grab;
+			background-color: lightyellow;
+		}
+	}
+
+	.acf-innerblocks-container:empty {
+		border-radius: 3px;
+		border: dotted 1px silver;
+		padding: 8px;
+		min-height: 3rem;
+	}
+
+}
+

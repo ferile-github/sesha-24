@@ -1,0 +1,126 @@
+{
+    "key": "group_654bbe4722200",
+    "title": "Block - Media and Content",
+    "fields": [
+        {
+            "key": "field_65522ae6d8cd4",
+            "label": "Image",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_654bbe47e7ed4",
+            "label": "Image",
+            "name": "image",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_65316a4f33729"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_65522af0d8cd5",
+            "label": "Columns",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_654bbe69298f9",
+            "label": "Swap Columns",
+            "name": "swap_columns",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Swap the text\/media columns",
+            "default_value": 0,
+            "ui_on_text": "Swap",
+            "ui_off_text": "Dont Swap",
+            "ui": 1
+        },
+        {
+            "key": "field_6552296dc55d6",
+            "label": "Image Column Width",
+            "name": "image_column_width",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "4": "Small",
+                "6": "Equal",
+                "7": "Medium",
+                "9": "Large"
+            },
+            "default_value": 6,
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/media-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704189374
+}

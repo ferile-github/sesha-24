@@ -1,0 +1,33 @@
+<video
+	poster="{{video_poster_image.sizes.large | towebp }}"
+	preload="auto"
+	{% if video_autoplay %}
+	autoplay
+	playsinline
+	{% endif %}
+
+	{% if video_mute %}
+	muted
+	{% endif %}
+
+	{% if video_loop %}
+	loop
+	{% endif %}
+
+	{% if video_controls %}
+		controls
+		controlsList="
+			{% if not video_fullscreen %}
+				nofullscreen
+			{% endif %}
+			{% if not video_download %}
+				nodownload
+			{% endif %}
+		"
+	{% endif %}
+	class="w-full block object-cover object-center"
+	width="{{video.width}}"
+	height="{{video.height}}">
+
+	<source src="{{video.url}}" type="{{video.mime_type}}" />
+</video>

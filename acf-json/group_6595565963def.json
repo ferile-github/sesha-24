@@ -1,0 +1,70 @@
+{
+    "key": "group_6595565963def",
+    "title": "Block - Blog Intro",
+    "fields": [
+        {
+            "key": "field_6595565959919",
+            "label": "Image",
+            "name": "post_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "If no image is provided, the Featured Image Thumbnail for this post will automatically show.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_659556815991a",
+            "label": "Video",
+            "name": "post_video",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "If no video is provided, the image selected for this block will show.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/blog-intro"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1713781500
+}

@@ -1,0 +1,22 @@
+<!-- {{ title }} - {{description}} -->
+
+{% if posts %}
+<div {{ anchor_id }} class="{{ classname }}">
+
+	<div class="container">
+		<header class="mb-md">
+			<h2>{{latest_news_title}}</h2>
+			<a class="btn btn-primary" href="{{blog_url}}">All news</a>
+		</header>
+
+		<div class="flex flex-col gap-gutter / sm:grid sm:grid-cols-12">
+		{% for post in posts %}
+			<div class="sm:col-span-6 md:col-span-4 lg:col-span-3 mb-lg">
+				{% include "tease-post.twig" with { 'post' : post } %}
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+
+</div>
+{% endif %}

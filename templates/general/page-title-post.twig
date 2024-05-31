@@ -1,0 +1,27 @@
+{% if title %}
+<header class="mb-md">
+	<div class="container mb-xs overflow-hidden">
+		<div class="flex flex-col justify-between items-start gap-sm md:flex-row md:items-end / pt-180 pb-xs">
+			<p class="h2 / text-balance leading-none mb-0 / animated fadeInUp-pre faster" data-scroll-class="fadeInUp" data-scroll-reset="true">
+				{{title}}
+			</p>
+
+			<div class="flex gap-sm flex-nowrap items-center / animated fadeInUp-pre delay-1s faster" data-scroll-class="fadeInUp">
+				{% include "components/tag-category.twig" with {
+					'linked': false,
+					'title': post.category,
+					'link': post.category.link }
+					%}
+				<p class="mb-0 text-md whitespace-nowrap">
+					Words: {{post.author}}
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container overflow-hidden">
+		<p class="text-sm md:text-right / animated fadeInDown-pre delay-2s faster"  data-scroll-class="fadeInDown">Published on {{ post.date }}</p>
+	</div>
+</header>
+{% endif %}

@@ -1,0 +1,33 @@
+<!-- {{ title }} - {{description}} -->
+{% if video %}
+<div {{ anchor_id }} class="{{ classname }} relative mb-xl">
+
+	{% if banner_title %}
+		<h2 class="absolute left-sm bottom-sm text-base text-white">{{banner_title}}</h2>
+	{% endif %}
+
+	<video
+		id="block-banner-video"
+		{% if video_scroll %}
+		data-content-scroll="true"
+		{% endif %}
+		autoplay
+		playsinline
+		muted
+		loop
+		poster="{{video_poster.sizes.large | towebp}}"
+		class="w-screen block object-cover object-center h-banner-mobile lg:h-banner"
+		width="{{video.width}}"
+		height="{{video.height}}">
+
+		<source src="{{video.url}}" type="{{video.mime_type}}" />
+	</video>
+
+	{% include 'components/arrow-down.twig' %}
+
+</div>
+
+<div id="content-below-banner" class="anchor"></div>
+{% endif %}
+
+

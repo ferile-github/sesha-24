@@ -1,0 +1,17 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+<div class="min-w-[75vw] sm:min-w-[30vw] lg:min-w-[20vw] mb-xl">
+	{% if post.thumbnail.src %}
+		<a href="{{post.link}}">
+			<img class="mb-xs aspect-square object-cover" src="{{post.thumbnail.src('medium') | towebp | resize(800, 800) }}" alt="{{post.thumbnail.alt}}" loading="lazy">
+		</a>
+	{% endif %}
+
+	<h2 class="h3 mb-xs"><a href="{{post.link}}">{{post.title}}</a></h2>
+
+	<p class="mb-0">
+		{% include "components/button.twig" with {'title': 'In the Studio', 'link': post.link } %}
+	</p>
+</div>
+{% endblock %}

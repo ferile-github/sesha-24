@@ -1,0 +1,23 @@
+<!-- {{ title }} - {{description}} -->
+{% if images_carousel %}
+	{% if is_preview == false %}
+	<div {{ anchor_id }} class="js-image-carousel {{ classname }}">
+		{% for item in images_carousel %}
+
+		<div class="carousel__item px-ssm">
+			<img class="max-h-[400px] md:max-h-[560px] w-auto" src="{{item.image.sizes.medium | towebp}}" width="{{item.image.sizes['medium-width']}}" height="{{item.image.sizes['medium-height']}}" alt="{{item.image.alt}}">
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	{% if is_preview == true %}
+	<div {{ anchor_id }} class=" flex flex-nowrap overflow-x-scroll {{ classname }}">
+		{% for item in images_carousel %}
+		<div class="carousel__item px-ssm">
+			<img class=" min-w-[330px]" src="{{item.image.sizes.medium | towebp}}" width="{{item.image.sizes['medium-width']}}" height="{{item.image.sizes['medium-height']}}" alt="{{item.image.alt}}">
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+{% endif %}

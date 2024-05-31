@@ -1,0 +1,17 @@
+@import "./tailwind/tailwind.css";
+@import "./base/custom-properties.css";
+@import "./base/page.css";
+@import "./base/focus.css";
+@import "./base/type.css";
+@import "./base/buttons.css";
+@import "./base/wordpress.css";
+
+
+.edit-post-visual-editor__post-title-wrapper {
+	margin-bottom: theme('spacing.md');
+	padding-bottom: theme('spacing.xs');
+}
+
+body {
+	padding: 0 theme('spacing.sm');
+}

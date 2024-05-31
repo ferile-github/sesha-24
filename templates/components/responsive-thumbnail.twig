@@ -1,0 +1,8 @@
+<picture data-media-id="{{image.id}}">
+	<source media="(min-width:1280px)" srcset="{{image.src('large') | towebp }}">
+	<source media="(min-width:1024px)" srcset="{{image.src('medium') | towebp }}">
+	<source media="(min-width:600px)" srcset="{{image.src('small') | towebp }}">
+
+	<img class="{{class}}" src="{{image.src('mobile') | towebp }}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}" loading="lazy">
+
+</picture>

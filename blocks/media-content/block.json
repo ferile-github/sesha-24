@@ -1,0 +1,38 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Media and Content Columns",
+		"description": "Media and Content Columns",
+		"name": "acf/media-content",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "media-document"
+		},
+		"keywords": [
+			"sesha",
+			"media",
+			"content"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-media-content.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": true,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true,
+			"color": {
+					"text": true,
+					"background": true,
+					"link": true,
+					"gradients": true
+			},
+			"multiple": true,
+			"jsx" : true
+		}
+}

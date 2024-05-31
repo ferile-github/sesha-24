@@ -1,0 +1,37 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Latest News",
+		"description": "A selection of the latest blog posts",
+		"name": "acf/latest-news",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "embed-post"
+		},
+		"keywords": [
+			"sesha",
+			"latest-news"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-latest-news.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true,
+			"html": true,
+			"multiple": true,
+			"color": {
+				"text": true,
+				"background": true,
+				"link": false,
+				"gradients": false
+			}
+		}
+}

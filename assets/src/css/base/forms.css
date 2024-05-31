@@ -1,0 +1,112 @@
+/* Reset all form elements */
+input:not([type='checkbox'], [type='radio'], [type='button'], [type='submit'], [type='range'], [type='color']),
+textarea, select {
+  display: block;
+  border-radius: var(--field-border-radius);
+  padding: var(--field-padding);
+  appearance: none;
+  border: solid var(--field-border-width) var(--field-border-color);
+  background: var(--field-background);
+  color: var(--field-color);
+
+  &:hover {
+    border-color: var(--field-border-hover);
+    background-color: var(--field-background-hover);
+  }
+
+  &:focus {
+    border-color: var(--field-border-focus);
+    background-color: var(--field-background-focus);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--field-placeholder);
+  }
+
+  &:disabled,
+  &[readonly] {
+    opacity: 0.75;
+  }
+}
+
+
+/* Select Drop Down */
+select {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right theme('spacing.xs') center;
+  background-size: 16px 12px;
+  padding-right: 30px;
+
+
+  &[multiple],
+  &[size]:not([size="1"]) {
+    padding-right: theme('spacing.xs');
+    background-image: none;
+  }
+}
+
+
+
+/* Radios and checkboxes */
+input[type='checkbox'],
+input[type='radio'] {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  vertical-align: middle;
+  background-color: var(--checkbox-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: solid var(--field-border-width) var(--field-checkbox-color);
+  appearance: none;
+  cursor: pointer;
+
+  &:active {
+    filter: brightness(90%);
+  }
+
+  &:hover {
+    border-color: var(--checkbox-border-hover);
+    background-color: var(--checkbox-background-hover);
+  }
+
+  &:checked {
+    background-color: var(--checkbox-background-checked);
+    border-color: var(--checkbox-border-checked);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.75;
+  }
+}
+
+
+/* Checkbox */
+input[type="checkbox"] {
+  border-radius: 2px;
+
+  &:indeterminate {
+    background-color: var(--checkbox-background-checked);
+    border-color: var(--checkbox-border-checked);
+  }
+
+  &:checked {
+		border-color: var(--checkbox-background-checked);
+    background-color: var(--checkbox-background-checked);
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+  }
+}
+
+
+/* Radio */
+input[type="radio"] {
+  border-radius: 50%;
+
+  &:checked {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='white'/></svg>");
+  }
+}

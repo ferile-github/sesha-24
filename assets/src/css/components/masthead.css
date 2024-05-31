@@ -1,0 +1,66 @@
+/* Site Masthead */
+/* ---------------------------------------------------------------- */
+.site-masthead {
+	position: fixed;
+	z-index: theme('zIndex.masthead');
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: var(--masthead-menu-transition);
+	background-color: theme('colors.lightgray');
+
+	&__inner {
+		transition: var(--masthead-menu-transition);
+	}
+
+	.has-reduced-menu & {
+		background-color: var(--color-light)
+	}
+
+}
+
+
+/* Site Logo */
+/* ---------------------------------------------------------------- */
+.site-logo {
+	svg {
+		width: var(--masthead-logo-width);
+		transition: var(--masthead-menu-transition);
+
+		.has-reduced-menu & {
+			width: var(--masthead-logo-width-reduced);
+		}
+	}
+}
+
+
+/* Menu Links - Arrow Indicators */
+/* ---------------------------------------------------------------- */
+.menu-link {
+	&-back:after,
+	.menu-item-has-children > &:after {
+		content: '';
+		display: block;
+		transition: all 200ms ease-in-out;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+
+/* Overlay when menu is open */
+/* ---------------------------------------------------------------- */
+.main-menu-overlay {
+	background: rgba(0, 0, 0, .2);
+	position: static;
+	z-index: theme('zIndex.mainmenu');
+	inset: 0;
+	opacity: 0;
+	transition: var(--masthead-overlay-transtion);
+
+	.has-contact-active &,
+	.has-navigation-active & {
+		position: fixed;
+		opacity: 1;
+	}
+}

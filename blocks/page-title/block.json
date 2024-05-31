@@ -1,0 +1,30 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Page Title",
+		"description": "Page Title",
+		"name": "acf/page-title",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "heading"
+		},
+		"keywords": [
+			"sesha",
+			"page-title"
+		],
+		"acf": {
+			"mode": "preview",
+			"renderTemplate": "block-page-title.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"multiple": false,
+			"mode": false
+		}
+}

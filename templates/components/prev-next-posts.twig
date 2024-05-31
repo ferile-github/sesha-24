@@ -1,0 +1,20 @@
+<div class="container">
+
+	<h2 class="mb-md">{{ __('Read More', 'sesha') }}</h2>
+
+	<div class="flex flex-col sm:grid grid-cols-12 gap-gutter mb-xxl">
+
+		{% if post.prev %}
+		<div class="col-span-4">
+			{% include 'tease-post.twig' with { 'post' : post.prev, 'class' : 'aspect-portrait mb-xs object-cover' } %}
+		</div>
+		{% endif %}
+
+		{% if post.next %}
+		<div class="col-start-9 col-span-4">
+			{% include 'tease-post.twig' with { 'post' : post.next, 'class' : 'aspect-landscape mb-xs object-cover' } %}
+		</div>
+		{% endif %}
+
+	</div>
+</div>

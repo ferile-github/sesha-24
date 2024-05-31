@@ -1,0 +1,50 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Example Block",
+		"description": "Example Block",
+		"name": "acf/example",
+		"category": "sesha",
+		"viewScript": [ "file:./block-example.js", "block-example-script" ],
+		"style": [ "file:./block-example.css", "block-example" ],
+		"icon": {
+			"foreground": "#000",
+			"src": "example"
+		},
+		"keywords": [
+			"sesha",
+			"example"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-example.php"
+		},
+		"supports": {
+			"align": true,
+			"anchor": true,
+			"ariaLabel": true,
+			"alignContent": true,
+			"alignText": true,
+			"alignWide": true,
+			"customClassName": true,
+			"color": {
+					"text": true,
+					"background": true,
+					"link": true,
+					"gradients": true
+			},
+			"html": true,
+			"multiple": true,
+			"jsx" : true,
+			"spacing": {
+					"margin": true,
+					"padding": true,
+					"blockGap": true
+			},
+			"typography": {
+					"lineHeight": true,
+					"fontSize": true
+			},
+				"fullHeight": true
+		}
+}

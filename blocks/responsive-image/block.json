@@ -1,0 +1,42 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Responsive Image",
+		"description": "Create an optimised image that can load a different image for mobile devices. Highly performant at different screen dimensions",
+		"name": "acf/responsive-image",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "images-alt"
+		},
+		"keywords": [
+			"sesha",
+			"responsive-image"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-responsive-image.php"
+		},
+		"supports": {
+			"align": true,
+			"anchor": false,
+			"ariaLabel": true,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true,
+			"color": {
+					"text": true,
+					"background": true,
+					"link": true,
+					"gradients": true
+			},
+			"html": true,
+			"multiple": true,
+			"spacing": {
+					"margin": true,
+					"padding": true,
+					"blockGap": true
+			}
+		}
+}

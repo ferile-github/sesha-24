@@ -1,0 +1,75 @@
+{
+    "key": "group_6548c57480150",
+    "title": "Block - Columns",
+    "fields": [
+        {
+            "key": "field_6548c6452c9b1",
+            "label": "Column Gap",
+            "name": "column_gap",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Column gutter width (for wider devices)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "None",
+                "xs": "Small",
+                "gutter": "Default",
+                "lg": "Large"
+            },
+            "default_value": "gutter",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "vertical"
+        },
+        {
+            "key": "field_6548c5742c9b0",
+            "label": "Row Gap",
+            "name": "row_gap",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Row gutter width (for smaller devices)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "None",
+                "xs": "Small",
+                "gutter": "Default",
+                "lg": "Large"
+            },
+            "default_value": "gutter",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/columns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704189373
+}

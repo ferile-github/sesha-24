@@ -1,0 +1,21 @@
+{
+	"name": "sesha",
+	"description": "Sesha - A starter WordPress theme",
+	"authors": [
+		{
+				"name": "Andy Fairlie",
+				"email": "afairlie@gmail.com",
+				"homepage": "https://www.andyfairlie.com",
+				"role": "Developer"
+		}
+	],
+	"license": "ISC",
+	"require": {
+		"timber/timber": "^2.0"
+	},
+	"config": {
+			"allow-plugins": {
+					"composer/installers": true
+			}
+	}
+}

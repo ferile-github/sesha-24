@@ -1,0 +1,31 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Video Embed",
+		"description": "Embed a video file",
+		"name": "acf/video-embed",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "embed-video"
+		},
+		"keywords": [
+			"sesha",
+			"video"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-video-embed.php"
+		},
+		"supports": {
+			"align": true,
+			"anchor": false,
+			"ariaLabel": true,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true,
+			"html": true,
+			"multiple": true
+		}
+}

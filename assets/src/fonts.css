@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Suisse Slab';
+	src: url('fonts/slab/suisse-neue-light-S.woff2') format('woff2'),
+		url('fonts/slab/suisse-neue-light-S.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Suisse';
+	src: url('fonts/regular/SuisseIntl-Regular-WebS.woff2') format('woff2'),
+			 url('fonts/regular/SuisseIntl-Regular-WebS.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Suisse';
+	src: url('fonts/medium/SuisseIntl-Medium-WebS.woff2') format('woff2'),
+			 url('fonts/medium/SuisseIntl-Medium-WebS.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}

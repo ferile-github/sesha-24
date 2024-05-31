@@ -1,0 +1,8 @@
+<!-- {{ title }} - {{description}} -->
+<figure>
+{% include "components/responsive-image.twig" with {
+	'image': responsive_image,
+	'mobileimage' : responsive_image_mobile,
+	'class': classname
+	} %}
+</figure>

@@ -1,0 +1,29 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "FAQ's",
+		"description": "FAQ's",
+		"name": "acf/faq",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "welcome-learn-more"
+		},
+		"keywords": [
+			"sesha",
+			"faq"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-faq.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": false
+		}
+}

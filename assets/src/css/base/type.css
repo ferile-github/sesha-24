@@ -1,0 +1,96 @@
+html {
+	font-size: theme('fontSize.base');
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+
+	&[alt=''] {
+		outline: solid 2px yellow;
+	}
+}
+
+label {
+	cursor: pointer;
+}
+
+
+b, strong {
+	font-weight: theme('fontWeight.bold');
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: theme('fontFamily.heading');
+	font-style: normal;
+	font-weight: theme('fontWeight.bold');;
+	line-height: theme('lineHeight.tight');
+}
+
+.wp-block-heading {
+	margin-bottom: 1em;
+}
+
+h1, .h1 {
+	font-size: theme('fontSize.h1');
+}
+h2, .h2 {
+	font-size: theme('fontSize.h2');
+}
+h3, .h3 {
+	font-size: theme('fontSize.h3');
+}
+h4, .h4 {
+	font-size: theme('fontSize.h4');
+}
+
+h5, .h5 {
+	font-size: theme('fontSize.h5');
+}
+
+h6, .h6 {
+	font-size: theme('fontSize.h6');
+}
+
+ul:not([class]),
+ol:not([class]) {
+	padding: 0 0 theme('spacing.md') theme('spacing.lg');
+}
+
+ol:not([class]) {
+	li {
+		list-style: decimal
+	}
+}
+
+ul:not([class]) {
+	li {
+		list-style: disc;
+	}
+}
+
+p {
+	margin-bottom: theme('spacing.sm');
+	line-height: theme('lineHeight.normal');
+}
+
+a {
+	color: var(--text-link-color);
+	font-weight: theme('fontWeight.bold');
+
+	&:hover {
+		color: var(--text-link-color-hover);
+		text-decoration: underline;
+	}
+
+	&:focus {
+		color: var(--text-link-color-focus);
+		text-decoration: underline;
+	}
+}

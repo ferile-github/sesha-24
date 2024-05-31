@@ -1,0 +1,33 @@
+<!-- {{ title }} - {{description}} -->
+<div {{ anchor_id }} class="{{ classname }} flex flex-col md:grid grid-cols-12 mb-xl gap-gutter relative / animated fadeIn slow">
+	<div class="col-span-6">
+		<figure class="mb-sm sticky top-[80px]">
+			{% if post_video %}
+				{% include "components/video-autoplay.twig" with {
+				'poster': post.thumbnail.src('small') | towebp,
+				'video': post_video,
+				'class': 'w-full'
+				} %}
+			{% elseif post_image %}
+				{% include "components/responsive-image.twig" with {
+				'image': post_image,
+				'class': 'testimonial__image'
+				} %}
+			{% elseif post_thumbnail %}
+				{% if is_preview %}
+					{{post_thumbnail}}
+				{% else %}
+					{% include "components/responsive-thumbnail.twig" with {
+					'image': post.thumbnail,
+					'class' : ''
+					} %}
+				{% endif %}
+			{% endif %}
+		</figure>
+	</div>
+	<div class="col-span-6">
+		<InnerBlocks  />
+	</div>
+</div>
+
+

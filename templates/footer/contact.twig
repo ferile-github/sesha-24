@@ -1,0 +1,21 @@
+<section class="mb-lg col-span-2 md:col-span-4">
+	<h2 class="footer__title / text-h6  mb-md">
+		{{ __('Get in touch', 'sesha') }}
+	</h2>
+	{% if options.contact_message %}
+		<p class="">
+			{{options.contact_message}}
+		</p>
+	{% endif %}
+
+	<p class="mb-0">
+		{% if options.contact_email %}
+		<a href="mailto:{{options.contact_email}}">{{options.contact_email}}</a>
+		<br>
+		{% endif %}
+
+		{% if options.contact_number %}
+			<a href="tel:{{options.contact_number}}">{{options.contact_number}}</a>
+		{% endif %}
+	</p>
+</section>

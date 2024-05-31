@@ -1,0 +1,91 @@
+{
+    "key": "group_6527ee0833e71",
+    "title": "Block - Buttons",
+    "fields": [
+        {
+            "key": "field_6527ee08aa7b7",
+            "label": "Buttons",
+            "name": "buttons",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_6527ee18aa7b8",
+            "button_label": "Add a button",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6527ee18aa7b8",
+                    "label": "Link",
+                    "name": "button_url",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_6527ee08aa7b7"
+                },
+                {
+                    "key": "field_6527ee36aa7b9",
+                    "label": "Style",
+                    "name": "button_style",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "btn-primary": "Primary",
+                        "btn-lightblue": "Light Blue",
+                        "btn-lightpink": "Light Pink"
+                    },
+                    "default_value": "btn-primary",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_6527ee08aa7b7"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/buttons"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1704189373
+}

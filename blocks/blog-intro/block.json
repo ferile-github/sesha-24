@@ -1,0 +1,38 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Blog Introduction",
+		"description": "Blog Introduction",
+		"name": "acf/blog-intro",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "admin-post"
+		},
+		"keywords": [
+			"sesha",
+			"blog",
+			"introduction"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-blog-intro.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": false,
+			"color": {
+					"text": false,
+					"background": false,
+					"link": false,
+					"gradients": false
+			},
+			"multiple": false,
+			"jsx" : true
+		}
+}

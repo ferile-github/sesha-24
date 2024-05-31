@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: stretch;
+	color: var(--text-body-color);
+	background-color: var(--body-bg);
+}
+
+.anchor {
+	scroll-margin-top: var(--masthead-height-desktop);
+}
+
+.container {
+	max-width: theme('screens.xl');
+
+	&-sm {
+		max-width: theme('screens.sm');
+	}
+	&-md {
+		max-width: theme('screens.md');
+	}
+	&-lg {
+		max-width: theme('screens.lg');
+	}
+	&-xl {
+		max-width: theme('screens.xl');
+	}
+}
+
+
+/* Aspect ratios */
+.aspect-square {
+	aspect-ratio: 1 / 1;
+}
+.aspect-landscape {
+	aspect-ratio: 4 / 3;
+}
+.aspect-portrait {
+	aspect-ratio: 3 / 4;
+}
+.aspect-video {
+	aspect-ratio: 16 / 10;
+}
+.aspect-work-thumbnail {
+	aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,22 @@
+<!-- {{ title }} - {{description}} -->
+{% if buttons %}
+<div {{ anchor_id }} class="{{ classname }} / flex gap-md items-center flex-wrap">
+
+	{% for item in buttons %}
+
+		{% if is_preview == false and item.button_url.url %}
+			<a href="{{item.button_url.url}}" class="btn {{item.button_style}} {{item.button_size}}" target="{{item.button_url.target}}">
+				{{item.button_url.title}}
+			</a>
+		{% endif %}
+
+		{% if is_preview and item.button_url.url %}
+			<button class="btn {{item.button_style}} {{item.button_size}}" target="{{item.button_url.target}}">
+				{{item.button_url.title}}
+			</button>
+		{% endif %}
+
+{% endfor %}
+
+</div>
+{% endif %}

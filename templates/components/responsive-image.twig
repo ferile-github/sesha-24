@@ -1,0 +1,12 @@
+<picture data-media-id="{{image.id}}">
+	<source media="(min-width:1280px)" srcset="{{image.sizes.large | towebp }}">
+	<source media="(min-width:1024px)" srcset="{{image.sizes.medium | towebp }}">
+	<source media="(min-width:600px)" srcset="{{image.sizes.small | towebp }}">
+
+	{% if mobileimage %}
+		<img class="{{class}}" src="{{mobileimage.sizes.mobile | towebp}}" alt="{{image.alt}}" loading="lazy">
+	{% else %}
+		<img class="{{class}}" src="{{image.sizes.mobile | towebp}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}" loading="lazy">
+	{% endif %}
+
+</picture>

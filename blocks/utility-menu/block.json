@@ -1,0 +1,30 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Utility Menu",
+		"description": "Utility Menu",
+		"name": "acf/utility-menu",
+		"category": "sesha",
+		"icon": {
+			"foreground": "#000",
+			"src": "menu-alt3"
+		},
+		"keywords": [
+			"sesha",
+			"utility-menu"
+		],
+		"acf": {
+			"mode": "preview",
+			"renderTemplate": "block-utility-menu.php"
+		},
+		"supports": {
+			"mode": false,
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": false
+		}
+}

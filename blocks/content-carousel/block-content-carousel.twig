@@ -1,0 +1,30 @@
+<!-- {{ title }} - {{description}} -->
+{% if content_carousel %}
+
+	{% if is_preview == false %}
+	<div {{ anchor_id }} class="js-content-carousel {{ classname }}">
+		{% for item in content_carousel %}
+		<div class="carousel__item px-ssm">
+			<img class="mb-sm" data-lazy="{{item.image.sizes.small | towebp}}" alt="{{item.image.alt}}">
+			<div class="carousel__counter / text-center mb-sm lg:opacity-0 transition-opacity duration-200">
+				{{loop.index}} / {{loop.length}}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="js-content-carousel-arrows flex gap-sm justify-center"></div>
+	{% endif %}
+
+	{% if is_preview == true %}
+	<div {{ anchor_id }} class=" flex flex-nowrap overflow-x-scroll {{ classname }}">
+		{% for item in content_carousel %}
+		<div class="carousel__item sm:px-ssm">
+			<img class="object-cover min-w-[30vw] mb-sm" src="{{item.image.sizes.small | towebp}}" alt="{{item.image.alt}}" loading="lazy">
+			<div class="carousel__counter">
+				{{loop.index}} / {{loop.length}}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+{% endif %}

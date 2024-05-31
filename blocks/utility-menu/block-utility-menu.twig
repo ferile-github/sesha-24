@@ -1,0 +1,17 @@
+<!-- {{ title }} - {{description}} -->
+{% if utilitynav %}
+<div {{ anchor_id }} class="{{ classname }} mt-sm lg:mt-lg mb-md">
+		<ul class="flex gap-sm lg:gap-lg flex-nowrap overflow-x-auto">
+		{% for item in utilitynav.get_items %}
+			<li class="{{ item.classes | join(' ') }} list-none whitespace-nowrap">
+			{% if is_preview %}
+				<button>{{ item.title }}</button>
+			{% else %}
+				<a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+			{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+</div>
+{% endif %}
+

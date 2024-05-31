@@ -1,0 +1,38 @@
+<label>
+	<span class="wpcf7-form-control-label"> Your Name <span class="required">*</span> </span>
+	[text* your-name akismet:author class:form-control]
+</label>
+
+<label>
+	<span class="wpcf7-form-control-label"> Your Email <span class="required">*</span></span>
+	[email* your-email akismet:author_email class:form-control]
+</label>
+
+<label>
+	<span class="wpcf7-form-control-label"> Your Organisation </span>
+	[text your-organisation class:form-control]
+</label>
+
+
+<label>
+	<span class="wpcf7-form-control-label"> Recipient <span class="required">*</span></span>
+	[select* your-recipient
+	"Contact 1 | contact1@website.com"
+	"Contact 2 | contact2@website.com"
+	"Contact 3 | contact3@website.com"
+	"Contact 4 | contact4@website.com"
+	]
+</label>
+
+<p class="wpcf7-form-control-label-checkboxes"> What are you interested in? </p>
+
+[checkbox your-query use_label_element "Logo Design" "Branding Design" "Corporate Identity" "Art Direction"]
+
+<label>
+	<span class="wpcf7-form-control-label"> Your Message </span>
+	[textarea your-message class:form-control]
+</label>
+
+<div class="wpcf7-form-submit-wrapper">
+	[submit "Send"]
+</div>

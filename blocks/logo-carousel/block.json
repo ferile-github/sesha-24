@@ -1,0 +1,31 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Logo Carousel",
+		"description": "A scrolling carousel of logos",
+		"name": "acf/logo-carousel",
+		"category": "sesha",
+		"viewScript": [ "file:./block-logo-carousel.js", "block-logo-carousel-script" ],
+		"icon": {
+			"foreground": "#000",
+			"src": "images-alt2"
+		},
+		"keywords": [
+			"sesha",
+			"logo",
+			"carousel"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-logo-carousel.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true
+		}
+}

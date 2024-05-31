@@ -1,0 +1,15 @@
+<!-- {{ title }} - {{description}} -->
+{% if banner_image %}
+<div {{ anchor_id }} class="{{ classname }} relative mb-xl" {{animated}}>
+	<h2 class="absolute left-sm bottom-sm text-base text-white">{{banner_title}}</h2>
+	{% include "components/responsive-image.twig" with {
+		'image': banner_image,
+		'mobileimage' : banner_image_mobile,
+		'class': 'w-screen object-cover object-center h-banner-mobile lg:h-banner'
+		} %}
+
+		{% include 'components/arrow-down.twig' %}
+</div>
+
+<div id="content-below-banner" class="anchor"></div>
+{% endif %}

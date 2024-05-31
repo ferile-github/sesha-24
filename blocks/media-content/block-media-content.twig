@@ -1,0 +1,22 @@
+<!-- {{ title }} - {{description}} -->
+<div {{ anchor_id }} class="{{ classname }} flex flex-col lg:grid grid-cols-12 gap-gutter" {{animated}}>
+	<div class="col-span-{{image_column_width}} {{thumbnailColumnClass}}">
+
+		{% if responsive_image %}
+			{% include "components/responsive-image.twig" with {
+			'image': responsive_image,
+			'mobileimage' : responsive_image_mobile,
+			'class': ''
+			} %}
+		{% endif %}
+
+		{% if video %}
+			{% include "components/video-embed.twig" %}
+		{% endif %}
+
+	</div>
+
+	<div class="col-span-{{12 - image_column_width}} {{contenColumnClass}}">
+		<InnerBlocks  />
+	</div>
+</div>

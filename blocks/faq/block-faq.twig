@@ -1,0 +1,18 @@
+<!-- {{ title }} - {{description}} -->
+<div {{ anchor_id }} class="{{ classname }} flex flex-col">
+
+	{% for item in faqs %}
+	<div class="flex flex-col gap-md py-md border-b last-of-type:border-b-0">
+		<div class="faq__question">
+			<h2 class="h3">
+				{{item.question}}
+			</h2>
+		</div>
+
+		<div class="faq__answer">
+			{{item.answer}}
+		</div>
+	</div>
+	{% endfor %}
+
+</div>

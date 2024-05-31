@@ -1,0 +1,31 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Multiple Testimonials",
+		"description": "Multiple Testimonials",
+		"name": "acf/testimonials-multiple",
+		"category": "sesha",
+		"viewScript": [ "file:./block-testimonials-multiple.js", "block-testimonials-multiple-script" ],
+		"icon": {
+			"foreground": "#000",
+			"src": "format-quote"
+		},
+		"keywords": [
+			"sesha",
+			"testimonial",
+			"testimonials"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-testimonials-multiple.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": false,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true
+		}
+}

@@ -1,0 +1,24 @@
+{% block html_head_container %}
+	{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+<body class="{{body_class}} {{pagetheme}} flex flex-col min-h-screen" data-template="blog.twig">
+
+	{% include "masthead/masthead.twig" %}
+
+	<div class="container / flex flex-col lg:flex-row gap-gutter / grow">
+		<main id="site-content" role="main" class="site-content flex-1">
+			{% block content %}
+			{% endblock %}
+		</main>
+		{% include 'sidebar.twig' %}
+	</div>
+
+	{% include 'footer/footer.twig' %}
+
+
+</body>
+</html>

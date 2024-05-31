@@ -1,0 +1,21 @@
+<!-- {{ title }} - {{description}} -->
+<div {{ anchor_id }} class="{{ classname }} mb-xxl" {{animated}}>
+	<div class="container">
+		<h2>
+		{{testimonial_title}}
+		</h2>
+		<div class="js-multiple-testimonials / lg:grid lg:grid-cols-12 gap-gutter / mb-lg lg:mb-0">
+		{% for item in testimonials %}
+			<div class="col-span-4 flex flex-col justify-between border-s ps-gutter">
+				{% include "components/testimonial.twig" with {
+					'words' : item.testimonial_words,
+					'name' : item.testimonial_client_name,
+					'title' : item.testimonial_client_title,
+				} %}
+			</div>
+		{% endfor %}
+		</div>
+		<div class="js-multiple-testimonials-arrows flex gap-sm justify-center"></div>
+	</div>
+
+</div>

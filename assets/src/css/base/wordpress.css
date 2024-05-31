@@ -1,0 +1,33 @@
+.edit-post-visual-editor__post-title-wrapper {
+	margin-bottom: theme('spacing.md');
+	padding-bottom: theme('spacing.xs');
+	text-align: center;
+}
+
+.aligncenter,
+.alignleft,
+.alignright {
+	display: block;
+	padding: 0;
+}
+
+.aligncenter {
+	float: none;
+	margin: 0 auto;
+}
+
+.alignright {
+	float: right;
+	margin: 0;
+}
+
+.alignleft {
+	float: left;
+	margin: 0;
+}
+
+
+.wp-block.aligncenter {
+	display: flex;
+	justify-content: center;
+}

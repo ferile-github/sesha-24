@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"title": "Buttons",
+	"description": "A group of buttons",
+	"name": "acf/buttons",
+	"category": "sesha",
+	"icon": {
+			"foreground": "#000",
+			"src": "button"
+	},
+	"keywords": [
+			"sesha",
+			"buttons",
+			"button"
+	],
+	"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-buttons.php"
+	},
+	"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": true,
+			"alignContent": false,
+			"alignText": true,
+			"alignWide": true,
+			"customClassName": true,
+			"multiple": true
+	}
+}

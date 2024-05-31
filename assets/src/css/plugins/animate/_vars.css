@@ -1,0 +1,5 @@
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 800ms;
+  --animate-repeat: 1;
+}

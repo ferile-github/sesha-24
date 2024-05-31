@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"title": "Horizontal Rule",
+	"description": "A black dividing line between content sections",
+	"name": "acf/horizontal-rule",
+	"category": "sesha",
+	"icon": {
+			"foreground": "#000",
+			"src": "minus"
+	},
+	"keywords": [
+			"sesha",
+			"horizontal-rule"
+	],
+	"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-horizontal-rule.php"
+	},
+	"supports": {
+		"align": false,
+		"anchor": false,
+		"ariaLabel": false,
+		"alignContent": false,
+		"alignText": false,
+		"alignWide": false,
+		"customClassName": false,
+		"multiple": true
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"key": "group_6527e1ae0faa2",
+	"title": "Block - Container",
+	"fields": [
+			{
+					"key": "field_6527e1aea0f77",
+					"label": "Top\/Bottom Padding (Desktop)",
+					"name": "padding",
+					"aria-label": "",
+					"type": "button_group",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+							"width": "",
+							"class": "",
+							"id": ""
+					},
+					"choices": {
+							"py-0": "None",
+							"py-sm": "Small",
+							"py-md": "Medium",
+							"py-lg": "Large",
+							"py-xl": "Extra Large"
+					},
+					"default_value": "",
+					"return_format": "value",
+					"allow_null": 0,
+					"layout": "vertical"
+			},
+			{
+					"key": "field_65f03cb707a70",
+					"label": "Top\/Bottom Padding (Mobile)",
+					"name": "padding_mobile",
+					"aria-label": "",
+					"type": "button_group",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+							"width": "",
+							"class": "",
+							"id": ""
+					},
+					"choices": {
+							"py-0": "None",
+							"py-sm": "Small",
+							"py-md": "Medium",
+							"py-lg": "Large",
+							"py-xl": "Extra Large"
+					},
+					"default_value": "",
+					"return_format": "value",
+					"allow_null": 0,
+					"layout": "vertical"
+			}
+	],
+	"location": [
+			[
+					{
+							"param": "block",
+							"operator": "==",
+							"value": "acf\/container"
+					}
+			]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0,
+	"modified": 1710773098
+}

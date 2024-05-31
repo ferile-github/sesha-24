@@ -1,0 +1,27 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+
+	{% if post.thumbnail.src %}
+		<a href="{{post.link}}">
+			<img width="{{post.thumbnail.width}}" height="{{post.thumbnail.height}}" src="{{post.thumbnail.src('mobile') | towebp }}" alt="{{post.thumbnail.alt}}" loading="lazy">
+		</a>
+	{% endif %}
+
+	<h2 class="h4">
+		<a class="hover:no-underline" href="{{post.link}}">
+			{{post.title}}
+		</a>
+	</h2>
+
+	<div>
+	{% include "components/tag-category.twig" with {
+		'linked': false,
+		'title': post.category,
+		'link': post.category.link,
+		'classname' : ''
+		}
+		%}
+	</div>
+
+{% endblock %}

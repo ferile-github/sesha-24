@@ -1,0 +1,26 @@
+<!-- {{ title }} - {{description}} -->
+<div {{ anchor_id }} class="{{ classname }}" {{animated}}>
+
+	<div class="container">
+		<h2>
+		{{testimonial_title}}
+		</h2>
+		<div class="md:grid grid-cols-12 gap-gutter">
+			<figure class="col-span-6 mb-gutter md:mb-0">
+				{% include "components/responsive-image.twig" with {
+				'image': testimonial_image,
+				'class': 'testimonial__image'
+				} %}
+			</figure>
+
+			<div class="col-span-6 flex flex-col justify-between md:border-s md:ps-gutter">
+				{% include "components/testimonial.twig" with {
+					'words' : testimonial_words,
+					'name' : testimonial_client_name,
+					'title' : testimonial_client_title,
+				} %}
+			</div>
+		</div>
+	</div>
+
+</div>

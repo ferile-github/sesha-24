@@ -1,0 +1,115 @@
+.menu-link-back,
+.toggle-site-navigation {
+	display: none !important;
+}
+
+/* Site Masthead */
+/* ---------------------------------------------------------------- */
+body {
+	padding-top: var(--masthead-height-desktop);
+}
+
+.site-masthead {
+	.admin-bar & {
+		top: var(--wp-admin-bar);
+	}
+
+	&__inner {
+		height: var(--masthead-height-desktop);
+
+		.has-reduced-menu & {
+			height: var(--masthead-height-desktop-reduced);
+		}
+	}
+}
+
+
+/* Menus */
+/* ---------------------------------------------------------------- */
+.menu-items {
+	background-color: theme('colors.white');
+
+	&-wrapper {
+		position: absolute;
+		z-index: theme('zIndex.mainmenu');
+		transition: var(--masthead-dropdown-transtion);
+		background-color: theme('colors.white');
+		max-height: 0;
+		overflow: hidden;
+		min-width: 200px;
+		opacity: 0;
+	}
+	&-level-2 {
+		top: 100%;
+		left: 0;
+	}
+	&-level-2 &-wrapper {
+		top: 0;
+		left: 100%;
+	}
+
+	.menu-rtl &-level-2 &-wrapper {
+		left: auto;
+		right: 100%;
+	}
+}
+
+
+/* Menu items */
+/* ---------------------------------------------------------------- */
+.menu-item {
+	&-has-children {
+		position: relative;
+	}
+
+	&:hover > .menu-items-wrapper {
+		max-height: 1000px;
+		opacity: 1;
+		overflow: visible;
+	}
+
+	&:hover > .menu-link:after {
+		transform: rotate(180deg);
+	}
+}
+
+
+/* Menu links */
+/* ---------------------------------------------------------------- */
+.menu-link {
+	display: flex;
+	align-items: center;
+	gap: theme('spacing.xxs');
+
+	.menu-item-has-children > &:after {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	/* Top level menu arrow */
+	.menu-item-has-children > &:after {
+		/* '▼' */
+		background-image: var(--chevron-down);
+	}
+
+	/* Drop down menu links */
+	.menu-items-level-2 & {
+		padding: theme('spacing.xxs') 0;
+	}
+
+	/* Drop down menu arrow */
+	.menu-items-level-2 .menu-item-has-children > &:after {
+		/* '►'; */
+		background-image: var(--chevron-right);
+	}
+
+	/* Right to left drop down menu */
+	.menu-rtl .menu-items-level-2 & {
+		flex-direction: row-reverse;
+	}
+	.menu-rtl .menu-items-level-2 .menu-item-has-children > &:after {
+		/* '◄' */
+		background-image: var(--chevron-left);
+	}
+}
+

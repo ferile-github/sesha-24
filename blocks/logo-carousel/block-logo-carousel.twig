@@ -1,0 +1,22 @@
+<!-- {{ title }} - {{description}} -->
+{% if logos_carousel %}
+	{% if is_preview == false %}
+	<div {{ anchor_id }} class="js-logo-carousel {{ classname }}">
+		{% for item in logos_carousel %}
+		<div class="carousel__item px-lg">
+			<img class="h-[40px] sm:h-[70px]" src="{{item.image.sizes.small | towebp}}" alt="{{item.image.alt}}" height="70">
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	{% if is_preview == true %}
+	<div {{ anchor_id }} class=" flex flex-nowrap overflow-x-scroll {{ classname }}">
+		{% for item in logos_carousel %}
+		<div class="carousel__item px-ssm">
+			<img class="min-w-[100px]" src="{{item.image.sizes.mobile | towebp}}" alt="{{item.image.alt}}">
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+{% endif %}

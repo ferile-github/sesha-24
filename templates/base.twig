@@ -1,0 +1,20 @@
+{% block html_head_container %}
+	{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+<body class="{{body_class}} {{pagetheme}} flex flex-col min-h-screen xl:pb-footer">
+	<h1 class="sr-only">{{title}}</h1>
+	{% include "masthead/masthead.twig" %}
+
+	<main id="site-content" role="main" class="site-content grow z-min">
+		{% block content %}
+		{% endblock %}
+	</main>
+
+	{% include 'footer/footer.twig' %}
+
+</body>
+</html>

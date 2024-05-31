@@ -1,0 +1,116 @@
+:root {
+  /* Wordpress */
+  /* ---------------------------------------------- */
+  --wp-admin-bar: 32px;
+  --wp-admin-bar-mobile: 46px;
+
+	/* SVG's */
+  /* ---------------------------------------------- */
+	--chevron-up: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='m12 6.586-8.707 8.707 1.414 1.414L12 9.414l7.293 7.293 1.414-1.414L12 6.586z'/></svg>");
+	--chevron-down: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z'/></svg>");
+	--chevron-right: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z'/></svg>");
+	--chevron-left: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z'/></svg>");
+
+
+	/* Masthead */
+  /* ---------------------------------------------- */
+	--masthead-logo-width: 125px;
+	--masthead-logo-width-reduced: 100px;
+	--masthead-height-mobile: 60px;
+	--masthead-height-desktop: 75px;
+	--masthead-height-desktop-reduced: 50px;
+	--masthead-menu-transition: all 400ms ease-in-out;
+	--masthead-dropdown-transtion: opacity 200ms ease-in-out;
+	--masthead-overlay-transtion: opacity 500ms ease-in-out;
+
+	--masthead-offcanvas-menu-width: 80vw;
+	--masthead-offcanvas-menu-maxwidth: 700px;
+
+
+	/* Site  */
+  /* ---------------------------------------------- */
+	--body-bg: theme('colors.white');
+	--color-dark: theme('colors.black');
+	--color-light: theme('colors.white');
+
+  /* Typography */
+  /* ---------------------------------------------- */
+  --text-body-color: theme('colors.steel');
+  --text-link-color: theme('colors.magenta');
+  --text-link-color-hover: theme('colors.black');
+  --text-link-color-focus: theme('colors.black');
+
+  /* Form fields */
+  /* ---------------------------------------------- */
+  --field-padding: 12px 16px;
+  --field-border-width: 1px;
+  --field-border-radius: 3px;
+  --field-error-color: theme('colors.magenta');
+  --field-color: theme('colors.black');
+  --field-placeholder: theme('colors.steel');
+  --field-checkbox-color: theme('colors.gray');
+  --field-radio-color: theme('colors.gray');
+  --field-border-color: theme('colors.lightgray');
+  --field-background: theme('colors.lightgray');
+  --field-background-hover: theme('colors.white');
+  --field-border-hover: theme('colors.magenta');
+  --field-background-focus: theme('colors.white');
+  --field-border-focus: theme('colors.magenta');
+
+  /* Checkboxes and radios */
+  /* ---------------------------------------------- */
+  --checkbox-size: 1.2em;
+  --checkbox-check-color: theme('colors.white');
+  --checkbox-border: theme('colors.gray');
+  --checkbox-background: theme('colors.white');
+  --checkbox-background-hover: theme('colors.lightgray');
+  --checkbox-border-hover: theme('colors.gray');
+  --checkbox-background-checked: theme('colors.magenta');
+  --checkbox-border-checked: theme('colors.magenta');
+
+  /* Buttons */
+  /* ---------------------------------------------- */
+  /* Defaults */
+  --btn-radius: 8px;
+  --btn-padding: 12px 18px;
+  --btn-padding-sm: 5px 10px;
+  --btn-border-width: 1px;
+
+	--btn-background: theme('colors.white');
+  --btn-color: theme('colors.black');
+  --btn-border-color: theme('colors.black');
+
+	--btn-background-hover: theme('colors.steel');
+  --btn-color-hover: theme('colors.white');
+  --btn-border-color-hover: theme('colors.steel');
+
+	--btn-background-disabled: theme('colors.slate');
+  --btn-color-disabled: theme('colors.white');
+  --btn-border-color-disabled: theme('colors.slate');
+
+  /* Primary */
+  --btn-primary-background: theme('colors.magenta');
+  --btn-primary-color: theme('colors.white');
+  --btn-primary-border-color: theme('colors.magenta');
+
+	--btn-primary-background-hover: theme('colors.steel');
+  --btn-primary-color-hover: theme('colors.white');
+  --btn-primary-border-color-hover: theme('colors.steel');
+
+	--btn-primary-background-disabled: theme('colors.slate');
+  --btn-primary-color-disabled: theme('colors.white');
+  --btn-primary-border-color-disabled: theme('colors.slate');
+
+	/* Secondary */
+  --btn-secondary-background: theme('colors.steel');
+  --btn-secondary-color: theme('colors.white');
+  --btn-secondary-border-color: theme('colors.steel');
+
+	--btn-secondary-background-hover: theme('colors.magenta');
+  --btn-secondary-color-hover: theme('colors.white');
+  --btn-secondary-border-color-hover: theme('colors.transparent');
+
+	--btn-secondary-background-disabled: theme('colors.white');
+  --btn-secondary-color-disabled: theme('colors.slate');
+  --btn-secondary-border-color-disabled: theme('colors.slate');
+}

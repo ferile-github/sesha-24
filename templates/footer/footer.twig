@@ -1,0 +1,21 @@
+{% block footer %}
+<footer id="site-footer" class="site-footer py-md">
+	<div class="site-footer__inner">
+		<div class="container">
+			<div class="grid grid-cols-2 md:grid-cols-12 gap-gutter">
+				{% include "footer/contact.twig" %}
+				{% include "footer/address.twig" %}
+				{% include "footer/socials.twig" %}
+				{% include "footer/menu.twig" with {'items': footernav.get_items} %}
+			</div>
+			{% include "footer/copyright.twig" %}
+		</div>
+	</div>
+</footer>
+
+<div class="main-menu-overlay"></div>
+
+{% include 'footer/responsive-tool.twig' %}
+
+{{ function('wp_footer') }}
+{% endblock %}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"title": "Spacer",
+	"description": "Add a space between other blocks",
+	"name": "acf/spacer",
+	"category": "sesha",
+	"editorStyle": "file:./block-spacer.css",
+	"icon": {
+			"foreground": "#000",
+			"src": "align-center"
+	},
+	"keywords": [
+			"sesha",
+			"spacer"
+	],
+	"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-spacer.php"
+	},
+	"supports": {
+		"align": false,
+		"anchor": false,
+		"ariaLabel": false,
+		"alignContent": false,
+		"alignText": false,
+		"alignWide": false,
+		"customClassName": false,
+		"multiple": true
+	}
+}

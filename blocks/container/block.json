@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"title": "Content Container",
+	"description": "Block to add a fixed width to your content",
+	"name": "acf/container",
+	"category": "sesha",
+	"editorStyle": "file:./block-container.css",
+	"icon": {
+			"foreground": "#000",
+			"src": "align-center"
+	},
+	"keywords": [
+			"sesha",
+			"content",
+			"container"
+	],
+	"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-container.php"
+	},
+	"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": true,
+			"alignContent": false,
+			"alignText": true,
+			"alignWide": true,
+			"customClassName": true,
+			"color": {
+					"text": true,
+					"background": true,
+					"link": false,
+					"gradients": false
+			},
+			"multiple": true,
+			"jsx" : true
+	}
+}

@@ -1,0 +1,9 @@
+{% if linked == false %}
+<div class="inline-flex transition-opacity duration-500 {{classname}} text-sm border py-[3px] px-xxs / group-hover/tease:opacity-100">
+	{{title}}
+</div>
+{% else %}
+<a class="inline-flex transition-opacity duration-500 {{classname}} text-sm border py-[3px] px-xxs / group-hover/tease:opacity-100" href="{{link}}">
+	{{title}}
+</a>
+{% endif %}

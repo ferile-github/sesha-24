@@ -1,0 +1,32 @@
+{
+		"$schema": "https://schemas.wp.org/trunk/block.json",
+		"apiVersion": 2,
+		"title": "Content Carousel",
+		"description": "A scrolling carousel of content",
+		"name": "acf/content-carousel",
+		"category": "sesha",
+		"style": [ "file:./block-content-carousel.css", "block-content-carousel" ],
+		"viewScript": [ "file:./block-content-carousel.js", "block-content-carousel-script" ],
+		"icon": {
+			"foreground": "#000",
+			"src": "images-alt2"
+		},
+		"keywords": [
+			"sesha",
+			"content",
+			"carousel"
+		],
+		"acf": {
+			"mode": "edit",
+			"renderTemplate": "block-content-carousel.php"
+		},
+		"supports": {
+			"align": false,
+			"anchor": true,
+			"ariaLabel": false,
+			"alignContent": false,
+			"alignText": false,
+			"alignWide": false,
+			"customClassName": true
+		}
+}

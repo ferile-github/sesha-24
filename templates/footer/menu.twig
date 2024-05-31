@@ -1,0 +1,17 @@
+<section class="mb-lg col-span-2 md:col-span-2">
+	<h2 class="footer__title / text-h6  mb-md">
+		{{ __('Menu', 'sesha') }}
+	</h2>
+
+	{% if footernav %}
+	<nav id="footer-navigation" class="footer-navigation">
+		<ul class="flex flex-col gap-xs">
+		{% for item in items %}
+			<li class="{{ item.classes | join(' ') }} list-none">
+				<a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</nav>
+	{% endif %}
+</section>

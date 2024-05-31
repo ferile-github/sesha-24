@@ -1,0 +1,20 @@
+#banner-video {
+	display: none;
+}
+.block__video-banner {
+	width: 100vw;
+	height: 100svh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 500px) {
+	.block__video-banner {
+		background: none !important;
+		height: auto;
+	}
+	#banner-video {
+		display: block;
+	}
+}
+

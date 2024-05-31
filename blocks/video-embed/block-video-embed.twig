@@ -1,0 +1,6 @@
+<!-- {{ title }} - {{description}} -->
+{% if video %}
+<div {{ anchor_id }} class="{{ classname }}"  {{animated}}>
+	{% include "components/video-embed.twig" %}
+</div>
+{% endif %}
