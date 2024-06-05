@@ -15,7 +15,6 @@ class SeshaTimber extends Site {
 	 */
 	public function add_to_context( $context ) {
 		global $wp;
-		$context['canonical'] = home_url( $wp->request ).'/';
 		$context['title'] = get_the_title();
 		$context['options'] = get_fields('option');
 		$context['mainnav']  = Timber::get_menu('main-nav');
