@@ -10,22 +10,13 @@ class SeshaSite {
 		add_filter( 'body_class', array($this,'add_body_classes') );
 		add_filter( 'allowed_block_types_all',  array($this, 'disable_default_blocks'), 25, 2 );
 
-
-		add_filter('manage_work_posts_columns', array($this, 'featured_image_column'));
-		add_action('manage_work_posts_custom_column', array($this, 'featured_image_column_display'), 10, 2);
-
 		add_filter('manage_post_posts_columns', array($this, 'featured_image_column'));
 		add_action('manage_post_posts_custom_column', array($this, 'featured_image_column_display'), 10, 2);
 
-		add_filter('manage_team_posts_columns', array($this, 'featured_image_column'));
-		add_action('manage_team_posts_custom_column', array($this, 'featured_image_column_display'), 10, 2);
-
 		add_action('admin_head', array($this, 'admin_inline_styles') );
-
 	}
 
 	public function add_body_classes( $classes ) {
-
 		return $classes;
 	}
 
@@ -74,7 +65,6 @@ class SeshaSite {
 
 	public function add_media_sizes() {
 		add_image_size( 'mobile', 800, 800 );
-		add_image_size( 'small', 1024, 1024 );
 		add_image_size( 'banner', 3000, 3000 );
 	}
 
@@ -144,8 +134,5 @@ class SeshaSite {
 				}
 		</style>';
 	}
-
-
-
 
 }
